@@ -1,31 +1,65 @@
-# chikameshi-line-bot
-LINEMessagingAPIを活用したごはん屋さん紹介bot
+# Name
 
-## 概要
+**chikameshi-line-bot**<br>
+Restaurant introduction bot using LINEMessagingAPI<br>
+LINEMessagingAPIを活用した飲食店紹介bot<br>
 
-## 開発環境
-本リポジトリの開発環境。
+# Overview
 
-- 開発言語
-    Python3.8.9
-- アプリケーションサーバー
-    gunicorn
-- Webフレームワーク
-    Flask
-- DB
-    なし
+※後々アプリのスクリーンショットを添付する。
 
-## 運用
+# Requirement
 
-# 設定
-## 環境変数
-アプリケーションの実行に必要となる環境変数について記載する。
-- `CHANNEL_ACCESS_TOKEN`
-    LINEMessagingAPIから提供されるチャンネルアクセストークン
-- `CHANNEL_SECRET_KEY`
-    LINEMessagingAPIから提供されるチャンネルシークレットキー
-- `HOTPEPPER_API_KEY`
-    HOTPEPPERから提供されるグルメサーチAPIキー
+- Python 3.8.9
+- pipenv
+- flask
+- line-bot-sdk
+- requests
+- gunicorn
 
-# クレジット
-Powered by ホットペッパー Webサービス
+# Installation
+
+```shell
+# Install the python library from the Pipfile.
+$ pipenv install
+```
+
+## Environment variable
+
+The following environment variables are required to run this application.<br>
+
+- `CHANNEL_ACCESS_TOKEN`<br>
+    Channel access token provided by LINEMessagingAPI.<br>
+    LINEMessagingAPIから提供されるチャンネルアクセストークン。<br>
+- `CHANNEL_SECRET_KEY`<br>
+    Channel secret key provided by LINEMessagingAPI.<br>
+    LINEMessagingAPIから提供されるチャンネルシークレットキー。<br>
+- `HOTPEPPER_API_KEY`<br>
+    Gourmet search API key provided by HOTPEPPER.<br>
+    HOTPEPPERから提供されるグルメサーチAPIキー。<br>
+
+# Demo
+
+```shell
+$ git clone 
+$ cd chikameshi-line-bot
+$ gunicorn -c gunicorn.conf.py
+
+```
+
+# Note
+
+This repository uses the API provided by HOTPEPPER Web Service.<br>
+
+## Credits
+
+- Powered by ホットペッパー Webサービス
+
+# Auther
+My name is **AIRO**!<br>
+- [Gihub](https://github.com/AIRO28)
+- [Twitter](https://twitter.com/AIRO28_)
+- [Qiita](https://qiita.com/AIRO)
+
+# Licence
+This repository is Free.
