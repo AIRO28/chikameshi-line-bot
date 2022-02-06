@@ -18,6 +18,5 @@ def message_event_handler(event: Event):
     # debugコード
     ret = hotpepper.search_shop_list("35.6895014", "139.6917337")
 
-    linebot_api.reply_message(event.reply_token, messages=TextSendMessage(text=ret)
-
+    linebot_api.reply_message(event.reply_token, messages=TextSendMessage(text=ret))
 

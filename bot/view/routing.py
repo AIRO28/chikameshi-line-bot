@@ -15,5 +15,3 @@ def callback() -> str:
     except InvalidSignatureError:
         abort(400)
     return "OK"
-
-
